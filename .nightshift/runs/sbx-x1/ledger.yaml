@@ -9,20 +9,20 @@ tier_recommended: T0
 tags:
 - python
 - docs
-state: running
+state: done
 gate: null
-step: implement
+step: done
 stop_requested: null
 branch: plan/sbx-x1
 feature_branch: fix/sbx-x1
-pr: null
+pr: https://github.com/andras-tkcs/nightshift-sandbox/pull/1
 created: '2026-10-02T16:15:03Z'
-updated: '2026-10-02T16:15:56Z'
+updated: '2026-10-02T16:16:26Z'
 budget:
   used: 0.01
   limit: 1
   paused: false
-  since: '2026-10-02T16:15:56Z'
+  since: '2026-10-02T16:16:26Z'
 phases: []
 events:
 - time: '2026-10-02T16:15:03Z'
@@ -34,3 +34,9 @@ events:
 - time: '2026-10-02T16:15:14Z'
   type: state
   note: running
+- time: '2026-10-02T16:16:25Z'
+  type: state
+  note: 'done: pull request https://github.com/andras-tkcs/nightshift-sandbox/pull/1'
+- time: '2026-10-02T16:16:25Z'
+  type: finish
+  note: 'run finished: https://github.com/andras-tkcs/nightshift-sandbox/pull/1'
