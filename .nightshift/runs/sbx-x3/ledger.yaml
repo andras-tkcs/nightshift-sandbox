@@ -10,20 +10,20 @@ tier_source: owner
 tier_recommended: T3
 tags:
 - python
-state: running
-gate: null
-step: integrate
+state: done
+gate: '2'
+step: done
 stop_requested: null
 branch: plan/sbx-x3
 feature_branch: feature/x3
-pr: null
+pr: https://github.com/andras-tkcs/nightshift-sandbox/pull/5
 created: '2026-10-02T17:33:38Z'
-updated: '2026-10-02T17:52:06Z'
+updated: '2026-10-02T17:52:49Z'
 budget:
   used: 0.29
   limit: 4
   paused: false
-  since: '2026-10-02T17:52:06Z'
+  since: '2026-10-02T17:52:49Z'
 phases:
 - id: p1-word-count
   title: Add word_count(text) to sandbox_pkg/text.py with tests
@@ -128,3 +128,9 @@ events:
 - time: '2026-10-02T17:52:05Z'
   type: review
   note: review board
+- time: '2026-10-02T17:52:46Z'
+  type: state
+  note: 'done gate 2: pull request https://github.com/andras-tkcs/nightshift-sandbox/pull/5'
+- time: '2026-10-02T17:52:48Z'
+  type: finish
+  note: 'run finished: https://github.com/andras-tkcs/nightshift-sandbox/pull/5'
