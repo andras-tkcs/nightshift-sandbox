@@ -1,0 +1,31 @@
+version: 1
+id: sbx-x1
+project: nightshift-sandbox
+request:
+  text: Fix the typo 'recieve' in README.md
+tier: T0
+tier_source: owner
+tier_recommended: null
+tags: []
+state: queued
+gate: null
+step: intake
+stop_requested: null
+branch: plan/sbx-x1
+feature_branch: null
+pr: null
+created: '2026-10-02T16:15:03Z'
+updated: '2026-10-02T16:15:03Z'
+budget:
+  used: 0
+  limit: 1
+  paused: false
+  since: '2026-10-02T16:15:03Z'
+phases: []
+events:
+- time: '2026-10-02T16:15:03Z'
+  type: created
+  note: run sbx-x1 created
+- time: '2026-10-02T16:15:03Z'
+  type: tier
+  note: T0 (owner, 1 h)
