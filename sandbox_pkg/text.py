@@ -9,3 +9,9 @@ def reverse_words(text):
 def count_vowels(text):
     """Return the number of vowels in text."""
     return sum(1 for ch in text if ch in "aeiou")
+
+
+def titlecase(text):
+    """Return text as a lowercase slug: non-alphanumeric runs become one hyphen."""
+    mapped = "".join(ch.lower() if ch.isalnum() else " " for ch in text)
+    return "-".join(mapped.split())
