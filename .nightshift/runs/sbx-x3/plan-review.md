@@ -37,3 +37,10 @@ Reviewer: ns:code-reviewer, fresh context. What I read: the plan, the plan and p
 The plan is sound and the manifest passes validation. Phases 1 and 2 are mechanical and independent. There are no blocking findings. The main thing to fix is the stated reason for `# noqa: PLR0124` (finding 1), which does not match the repo's ruff config. The rest are small changes to make the checks more exact.
 
 REVIEW verdict=approve
+
+## Planner response
+
+- 1 (noqa PLR0124): not changed. With ruff 0.16.10 from `.venv`, `ruff check --show-settings` lists PLR0124 as enabled with no repo config, and `ruff check` on the D2 code without the comment failed with three PLR0124 errors (checked in a scratch copy). The comment is required; D2 now states this evidence.
+- 2 (checks source): partly changed. The resolved profile (`ns profile show`) does carry `checks` (lint, test) even though `commands` is empty; the plan now names both sources and notes they are equivalent.
+- 3, 4, 5, 7, 8: fixed as suggested (README block quoted; D4 says lines 11-18; final check is a grep counting 4; `! grep -q`; numstat `4 2 README.md`).
+- 6: fixed by requiring exactly one commit per phase and checking `git diff --name-only HEAD~1 HEAD`.
