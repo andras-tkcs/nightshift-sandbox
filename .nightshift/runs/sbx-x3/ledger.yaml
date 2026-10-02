@@ -18,16 +18,16 @@ branch: plan/sbx-x3
 feature_branch: feature/x3
 pr: null
 created: '2026-10-02T17:33:38Z'
-updated: '2026-10-02T17:48:50Z'
+updated: '2026-10-02T17:48:55Z'
 budget:
   used: 0.25
   limit: 4
   paused: false
-  since: '2026-10-02T17:48:50Z'
+  since: '2026-10-02T17:48:55Z'
 phases:
 - id: p1-word-count
   title: Add word_count(text) to sandbox_pkg/text.py with tests
-  state: review
+  state: merged
   branch: feature/x3--p1-word-count
   worktree: /home/ns/.cache/ns-e2e/e2e-20261002-4/coding/worktrees/nightshift-sandbox-sbx-x3--p1-word-count
   attempts: 2
@@ -91,3 +91,6 @@ events:
 - time: '2026-10-02T17:48:49Z'
   type: review
   note: p1-word-count round 1
+- time: '2026-10-02T17:48:55Z'
+  type: merge
+  note: p1-word-count merged into feature/x3
