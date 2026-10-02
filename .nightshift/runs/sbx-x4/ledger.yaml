@@ -17,19 +17,19 @@ branch: plan/sbx-x4
 feature_branch: feature/x4
 pr: null
 created: '2026-10-02T18:09:14Z'
-updated: '2026-10-02T18:18:09Z'
+updated: '2026-10-02T18:18:15Z'
 budget:
   used: 0.16
   limit: 3
   paused: false
-  since: '2026-10-02T18:18:09Z'
+  since: '2026-10-02T18:18:15Z'
 phases:
 - id: p1-titlecase
   title: Add titlecase(text) with tests and a README section, and retire the plan
-  state: review
+  state: running
   branch: feature/x4--p1-titlecase
   worktree: /home/ns/.cache/ns-e2e/e2e-20261002-5/coding/worktrees/nightshift-sandbox-sbx-x4--p1-titlecase
-  attempts: 1
+  attempts: 2
   review_rounds: 0
 events:
 - time: '2026-10-02T18:09:14Z'
@@ -68,3 +68,6 @@ events:
 - time: '2026-10-02T18:17:51Z'
   type: state
   note: running
+- time: '2026-10-02T18:18:15Z'
+  type: phase-start
+  note: 'p1-titlecase attempt: pid 1564443'
