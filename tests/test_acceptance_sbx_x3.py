@@ -149,7 +149,6 @@ def _check_example(name):
     assert eval(code.strip(), namespace) == ast.literal_eval(comment.strip())
 
 
-@ACCEPTANCE
 def test_ac7_readme_documents_word_count():
     lines = _usage_lines()
     imports = [
@@ -160,7 +159,6 @@ def test_ac7_readme_documents_word_count():
     _check_example("word_count")
 
 
-@ACCEPTANCE
 def test_ac7_readme_documents_clamp():
     lines = _usage_lines()
     imports = [
