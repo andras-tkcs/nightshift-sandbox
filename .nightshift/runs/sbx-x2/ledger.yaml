@@ -17,12 +17,12 @@ branch: plan/sbx-x2
 feature_branch: null
 pr: null
 created: '2026-10-02T17:07:29Z'
-updated: '2026-10-02T17:08:19Z'
+updated: '2026-10-02T17:13:00Z'
 budget:
-  used: 0.01
+  used: 0.09
   limit: 3
   paused: false
-  since: '2026-10-02T17:08:19Z'
+  since: '2026-10-02T17:13:00Z'
 phases: []
 events:
 - time: '2026-10-02T17:07:29Z'
