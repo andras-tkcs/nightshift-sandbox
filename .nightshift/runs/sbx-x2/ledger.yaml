@@ -14,15 +14,15 @@ gate: null
 step: gate1
 stop_requested: null
 branch: plan/sbx-x2
-feature_branch: null
+feature_branch: feature/x2
 pr: null
 created: '2026-10-02T17:07:29Z'
-updated: '2026-10-02T17:15:17Z'
+updated: '2026-10-02T17:15:39Z'
 budget:
-  used: 0.12
+  used: 0.13
   limit: 3
   paused: false
-  since: '2026-10-02T17:15:17Z'
+  since: '2026-10-02T17:15:39Z'
 phases: []
 events:
 - time: '2026-10-02T17:07:29Z'
@@ -46,3 +46,6 @@ events:
 - time: '2026-10-02T17:15:16Z'
   type: resumed
   note: resumed from queued
+- time: '2026-10-02T17:15:29Z'
+  type: state
+  note: running
