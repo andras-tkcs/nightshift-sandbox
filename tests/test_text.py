@@ -15,3 +15,11 @@ def test_count_vowels_lowercase():
 
 def test_count_vowels_none():
     assert count_vowels("rhythm") == 0
+
+
+def test_count_vowels_uppercase():
+    assert count_vowels("AEIOU") == 5
+
+
+def test_count_vowels_mixed_case():
+    assert count_vowels("Banana") == 3

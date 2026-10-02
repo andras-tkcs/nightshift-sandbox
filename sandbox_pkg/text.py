@@ -8,4 +8,4 @@ def reverse_words(text):
 
 def count_vowels(text):
     """Return the number of vowels in text."""
-    return sum(1 for ch in text if ch in "aeiou")
+    return sum(1 for ch in text if ch.lower() in "aeiou")
