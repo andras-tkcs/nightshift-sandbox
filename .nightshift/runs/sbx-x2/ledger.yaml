@@ -11,18 +11,18 @@ tags:
 - python
 state: running
 gate: null
-step: gate1
+step: phases
 stop_requested: null
 branch: plan/sbx-x2
 feature_branch: feature/x2
 pr: null
 created: '2026-10-02T17:07:29Z'
-updated: '2026-10-02T17:15:39Z'
+updated: '2026-10-02T17:15:41Z'
 budget:
   used: 0.13
   limit: 3
   paused: false
-  since: '2026-10-02T17:15:39Z'
+  since: '2026-10-02T17:15:41Z'
 phases: []
 events:
 - time: '2026-10-02T17:07:29Z'
