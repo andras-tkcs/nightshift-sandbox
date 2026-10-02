@@ -13,5 +13,6 @@ from sandbox_pkg.numbers import mean
 
 reverse_words("a b c")   # "c b a"
 count_vowels("banana")   # 3
+count_vowels("AEIOU")    # 5
 mean([1, 2, 3])          # 2.0
 ```
