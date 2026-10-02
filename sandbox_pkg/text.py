@@ -6,6 +6,11 @@ def reverse_words(text):
     return " ".join(reversed(text.split()))
 
 
+def word_count(text):
+    """Return the number of whitespace-separated words in text."""
+    return len(text.split())
+
+
 def count_vowels(text):
     """Return the number of vowels in text."""
     return sum(1 for ch in text if ch in "aeiou")
