@@ -5,22 +5,23 @@ request:
   issue: 2
 tier: T1
 tier_source: owner
-tier_recommended: null
-tags: []
-state: queued
+tier_recommended: T0
+tags:
+- python
+state: running
 gate: null
-step: intake
+step: implement
 stop_requested: null
 branch: plan/sbx-2
 feature_branch: null
 pr: null
 created: '2026-10-02T16:41:39Z'
-updated: '2026-10-02T16:41:40Z'
+updated: '2026-10-02T16:42:06Z'
 budget:
-  used: 0
+  used: 0.01
   limit: 2
   paused: false
-  since: '2026-10-02T16:41:40Z'
+  since: '2026-10-02T16:42:06Z'
 phases: []
 events:
 - time: '2026-10-02T16:41:39Z'
@@ -29,3 +30,6 @@ events:
 - time: '2026-10-02T16:41:40Z'
   type: tier
   note: T1 (owner, 2 h)
+- time: '2026-10-02T16:41:50Z'
+  type: state
+  note: running
