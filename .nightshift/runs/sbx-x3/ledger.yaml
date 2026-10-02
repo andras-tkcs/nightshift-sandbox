@@ -7,22 +7,23 @@ request:
     Plan them as two phases that do not depend on each other.'
 tier: T3
 tier_source: owner
-tier_recommended: null
-tags: []
-state: queued
+tier_recommended: T3
+tags:
+- python
+state: running
 gate: null
-step: intake
+step: discovery
 stop_requested: null
 branch: plan/sbx-x3
 feature_branch: null
 pr: null
 created: '2026-10-02T17:33:38Z'
-updated: '2026-10-02T17:33:39Z'
+updated: '2026-10-02T17:34:10Z'
 budget:
-  used: 0
+  used: 0.01
   limit: 4
   paused: false
-  since: '2026-10-02T17:33:39Z'
+  since: '2026-10-02T17:34:10Z'
 phases: []
 events:
 - time: '2026-10-02T17:33:38Z'
@@ -31,3 +32,6 @@ events:
 - time: '2026-10-02T17:33:38Z'
   type: tier
   note: T3 (owner, 4 h)
+- time: '2026-10-02T17:33:48Z'
+  type: state
+  note: running
