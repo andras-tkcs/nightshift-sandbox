@@ -16,12 +16,12 @@ branch: plan/sbx-2
 feature_branch: fix/sbx-2
 pr: https://github.com/andras-tkcs/nightshift-sandbox/pull/3
 created: '2026-10-02T16:41:39Z'
-updated: '2026-10-02T16:43:47Z'
+updated: '2026-10-02T16:43:54Z'
 budget:
   used: 0.03
   limit: 2
   paused: false
-  since: '2026-10-02T16:43:47Z'
+  since: '2026-10-02T16:43:54Z'
 phases:
 - id: fix
   title: fix
