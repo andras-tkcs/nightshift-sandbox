@@ -9,20 +9,20 @@ tier_source: owner
 tier_recommended: T1
 tags:
 - python
-state: running
-gate: null
-step: integrate
+state: done
+gate: '2'
+step: done
 stop_requested: null
 branch: plan/sbx-x2
 feature_branch: feature/x2
-pr: null
+pr: https://github.com/andras-tkcs/nightshift-sandbox/pull/4
 created: '2026-10-02T17:07:29Z'
-updated: '2026-10-02T17:18:16Z'
+updated: '2026-10-02T17:19:05Z'
 budget:
   used: 0.17
   limit: 3
   paused: false
-  since: '2026-10-02T17:18:16Z'
+  since: '2026-10-02T17:19:05Z'
 phases:
 - id: p1-slugify
   title: Add slugify with tests and README, retire the plan
@@ -71,3 +71,9 @@ events:
 - time: '2026-10-02T17:18:15Z'
   type: review
   note: review board
+- time: '2026-10-02T17:19:02Z'
+  type: state
+  note: 'done gate 2: pull request https://github.com/andras-tkcs/nightshift-sandbox/pull/4'
+- time: '2026-10-02T17:19:04Z'
+  type: finish
+  note: 'run finished: https://github.com/andras-tkcs/nightshift-sandbox/pull/4'
