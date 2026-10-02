@@ -24,7 +24,6 @@ README = Path(__file__).resolve().parent.parent / "README.md"
 # AC-1: word_count counts whitespace-separated words, like reverse_words.
 
 
-@ACCEPTANCE
 @pytest.mark.parametrize(
     ("text", "expected"),
     [
@@ -40,7 +39,6 @@ def test_ac1_word_count_counts_words(text, expected):
     assert word_count(text) == expected
 
 
-@ACCEPTANCE
 def test_ac1_word_count_matches_reverse_words():
     from sandbox_pkg.text import reverse_words, word_count
 
@@ -51,7 +49,6 @@ def test_ac1_word_count_matches_reverse_words():
 # AC-2: word_count returns 0 for empty and whitespace-only text.
 
 
-@ACCEPTANCE
 @pytest.mark.parametrize("text", ["", "  \t\n "])
 def test_ac2_word_count_empty_is_zero(text):
     from sandbox_pkg.text import word_count
