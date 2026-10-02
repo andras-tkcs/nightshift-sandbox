@@ -17,12 +17,12 @@ branch: plan/sbx-x4
 feature_branch: feature/x4
 pr: null
 created: '2026-10-02T18:09:14Z'
-updated: '2026-10-02T18:17:39Z'
+updated: '2026-10-02T18:17:41Z'
 budget:
   used: 0.15
   limit: 3
   paused: false
-  since: '2026-10-02T18:17:39Z'
+  since: '2026-10-02T18:17:41Z'
 phases:
 - id: p1-titlecase
   title: Add titlecase(text) with tests and a README section, and retire the plan
@@ -62,3 +62,6 @@ events:
 - time: '2026-10-02T18:17:39Z'
   type: phase-end
   note: p1-titlecase exit 0
+- time: '2026-10-02T18:17:40Z'
+  type: resumed
+  note: resumed from running
