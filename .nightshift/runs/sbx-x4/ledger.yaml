@@ -19,10 +19,10 @@ pr: null
 created: '2026-10-02T18:09:14Z'
 updated: '2026-10-02T18:09:51Z'
 budget:
-  used: 0
+  used: 0.01
   limit: 3
   paused: false
-  since: '2026-10-02T18:09:14Z'
+  since: '2026-10-02T18:09:51Z'
 phases: []
 events:
 - time: '2026-10-02T18:09:14Z'
