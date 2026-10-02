@@ -158,6 +158,7 @@ phases:
     touches:
       - sandbox_pkg/text.py
       - tests/test_text.py
+      - tests/test_slugify_acceptance.py
       - README.md
       - docs/sbx-x2-plan.md
     brief: |
@@ -174,6 +175,7 @@ phases:
       5. README.md: replace the intro sentence with the exact D3 sentence (this fixes "recieve" to "receive"), change the Usage import line
          to "from sandbox_pkg.text import reverse_words, count_vowels, slugify", and add the line
          'slugify("Hello World")   # "hello-world"' directly after the count_vowels line. No new heading.
+      5b. tests/test_slugify_acceptance.py: remove the ACCEPTANCE xfail decorators and the ACCEPTANCE = ... definition (and any import left unused) so the 8 acceptance tests run as normal tests.
       6. Delete docs/sbx-x2-plan.md (git rm). This is the retirement step. There are no ADRs to write and no CHANGELOG.md exists, so do not create one.
       7. Run .venv/bin/python -m ruff check . and .venv/bin/python -m pytest -q. Both pass. Do not touch pyproject.toml or sandbox_pkg/numbers.py.
          If ruff reports a rule that needs more than a formatting fix keeping the behaviour, or any existing test fails, stop with status=blocked.
@@ -183,7 +185,7 @@ phases:
       - ".venv/bin/python -c \"from sandbox_pkg.text import slugify as s; assert s('  --Hello World!--  ') == 'hello-world' and s('!!!') == '' and s('') == ''\" exits 0 (AC-3)"
       - ".venv/bin/python -c \"from sandbox_pkg.text import slugify; assert slugify('Python 3.10 Release') == 'python-3-10-release'\" exits 0 (AC-4)"
       - ".venv/bin/python -m pytest -q tests/test_text.py -k slugify reports 7 passed (AC-5)"
-      - ".venv/bin/python -m pytest -q reports 13 passed and 0 failed, and .venv/bin/python -m ruff check . prints 'All checks passed!' (AC-6)"
+      - ".venv/bin/python -m pytest -q reports 21 passed and 0 failed, and .venv/bin/python -m ruff check . prints 'All checks passed!' (AC-6)"
       - "grep -n 'slugify(\"Hello World\")   # \"hello-world\"' README.md prints one line (AC-7)"
       - "grep -q recieve README.md exits 1, i.e. the typo is gone (plan decision D3, not an AC)"
       - "test ! -e docs/sbx-x2-plan.md exits 0"
