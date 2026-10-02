@@ -9,20 +9,20 @@ tier_source: owner
 tier_recommended: T1
 tags:
 - python
-state: waiting
-gate: '1'
+state: queued
+gate: null
 step: gate1
 stop_requested: null
 branch: plan/sbx-x4
 feature_branch: null
 pr: null
 created: '2026-10-02T18:09:14Z'
-updated: '2026-10-02T18:16:20Z'
+updated: '2026-10-02T18:16:27Z'
 budget:
   used: 0.12
   limit: 3
   paused: false
-  since: '2026-10-02T18:16:20Z'
+  since: '2026-10-02T18:16:27Z'
 phases: []
 events:
 - time: '2026-10-02T18:09:14Z'
@@ -40,3 +40,6 @@ events:
 - time: '2026-10-02T18:16:12Z'
   type: gate
   note: 'gate 1: waiting for the owner'
+- time: '2026-10-02T18:16:26Z'
+  type: approved
+  note: gate 1
