@@ -9,20 +9,20 @@ tier_source: owner
 tier_recommended: T1
 tags:
 - python
-state: running
-gate: null
-step: integrate
+state: done
+gate: '2'
+step: done
 stop_requested: null
 branch: plan/sbx-x4
 feature_branch: feature/x4
-pr: null
+pr: https://github.com/andras-tkcs/nightshift-sandbox/pull/6
 created: '2026-10-02T18:09:14Z'
-updated: '2026-10-02T18:20:41Z'
+updated: '2026-10-02T18:21:28Z'
 budget:
   used: 0.19
   limit: 3
   paused: false
-  since: '2026-10-02T18:20:41Z'
+  since: '2026-10-02T18:21:28Z'
 phases:
 - id: p1-titlecase
   title: Add titlecase(text) with tests and a README section, and retire the plan
@@ -83,3 +83,9 @@ events:
 - time: '2026-10-02T18:20:40Z'
   type: review
   note: review board
+- time: '2026-10-02T18:21:26Z'
+  type: state
+  note: 'done gate 2: pull request https://github.com/andras-tkcs/nightshift-sandbox/pull/6'
+- time: '2026-10-02T18:21:28Z'
+  type: finish
+  note: 'run finished: https://github.com/andras-tkcs/nightshift-sandbox/pull/6'
