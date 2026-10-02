@@ -1,0 +1,33 @@
+version: 1
+id: sbx-x3
+project: nightshift-sandbox
+request:
+  text: 'Add two independent functions, each with tests and a README line: word_count(text)
+    in sandbox_pkg/text.py and clamp(value, low, high) in sandbox_pkg/numbers.py.
+    Plan them as two phases that do not depend on each other.'
+tier: T3
+tier_source: owner
+tier_recommended: null
+tags: []
+state: queued
+gate: null
+step: intake
+stop_requested: null
+branch: plan/sbx-x3
+feature_branch: null
+pr: null
+created: '2026-10-02T17:33:38Z'
+updated: '2026-10-02T17:33:39Z'
+budget:
+  used: 0
+  limit: 4
+  paused: false
+  since: '2026-10-02T17:33:39Z'
+phases: []
+events:
+- time: '2026-10-02T17:33:38Z'
+  type: created
+  note: run sbx-x3 created
+- time: '2026-10-02T17:33:38Z'
+  type: tier
+  note: T3 (owner, 4 h)
