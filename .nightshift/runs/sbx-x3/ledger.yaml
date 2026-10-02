@@ -18,12 +18,12 @@ branch: plan/sbx-x3
 feature_branch: feature/x3
 pr: null
 created: '2026-10-02T17:33:38Z'
-updated: '2026-10-02T17:51:04Z'
+updated: '2026-10-02T17:51:10Z'
 budget:
   used: 0.28
   limit: 4
   paused: false
-  since: '2026-10-02T17:51:04Z'
+  since: '2026-10-02T17:51:10Z'
 phases:
 - id: p1-word-count
   title: Add word_count(text) to sandbox_pkg/text.py with tests
@@ -41,7 +41,7 @@ phases:
   review_rounds: 1
 - id: p3-retire
   title: Document both functions in the README and retire the plan
-  state: review
+  state: merged
   branch: feature/x3--p3-retire
   worktree: /home/ns/.cache/ns-e2e/e2e-20261002-4/coding/worktrees/nightshift-sandbox-sbx-x3--p3-retire
   attempts: 2
@@ -122,3 +122,6 @@ events:
 - time: '2026-10-02T17:51:03Z'
   type: review
   note: p3-retire round 1
+- time: '2026-10-02T17:51:09Z'
+  type: merge
+  note: p3-retire merged into feature/x3
