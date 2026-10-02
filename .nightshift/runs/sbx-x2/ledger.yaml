@@ -17,16 +17,16 @@ branch: plan/sbx-x2
 feature_branch: feature/x2
 pr: null
 created: '2026-10-02T17:07:29Z'
-updated: '2026-10-02T17:16:06Z'
+updated: '2026-10-02T17:16:30Z'
 budget:
-  used: 0.14
+  used: 0.15
   limit: 3
   paused: false
-  since: '2026-10-02T17:16:06Z'
+  since: '2026-10-02T17:16:30Z'
 phases:
 - id: p1-slugify
   title: Add slugify with tests and README, retire the plan
-  state: running
+  state: review
   branch: feature/x2--p1-slugify
   worktree: /home/ns/.cache/ns-e2e/e2e-20261002-3/coding/worktrees/nightshift-sandbox-sbx-x2--p1-slugify
   attempts: 1
@@ -59,3 +59,6 @@ events:
 - time: '2026-10-02T17:16:05Z'
   type: phase-start
   note: 'p1-slugify attempt: pid 1398264'
+- time: '2026-10-02T17:16:29Z'
+  type: phase-end
+  note: p1-slugify exit 0
