@@ -6,17 +6,18 @@ request:
     become single hyphens, no leading or trailing hyphen. Add tests and a README section.'
 tier: T2
 tier_source: owner
-tier_recommended: null
-tags: []
-state: queued
+tier_recommended: T1
+tags:
+- python
+state: running
 gate: null
-step: intake
+step: discovery
 stop_requested: null
 branch: plan/sbx-x4
 feature_branch: null
 pr: null
 created: '2026-10-02T18:09:14Z'
-updated: '2026-10-02T18:09:14Z'
+updated: '2026-10-02T18:09:51Z'
 budget:
   used: 0
   limit: 3
@@ -30,3 +31,6 @@ events:
 - time: '2026-10-02T18:09:14Z'
   type: tier
   note: T2 (owner, 3 h)
+- time: '2026-10-02T18:09:26Z'
+  type: state
+  note: running
