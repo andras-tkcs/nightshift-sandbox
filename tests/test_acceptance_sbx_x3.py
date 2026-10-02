@@ -62,7 +62,6 @@ def test_ac2_word_count_empty_is_zero(text):
 # AC-3: clamp returns value, low or high; bounds inclusive; ints and floats.
 
 
-@ACCEPTANCE
 @pytest.mark.parametrize(
     ("args", "expected"),
     [
@@ -85,7 +84,6 @@ def test_ac3_clamp_limits_value(args, expected):
     assert type(result) is type(expected)
 
 
-@ACCEPTANCE
 def test_ac3_clamp_check_command_output():
     from sandbox_pkg.numbers import clamp as c
 
@@ -107,7 +105,6 @@ def test_ac3_clamp_check_command_output():
 # AC-4: clamp raises ValueError when low > high.
 
 
-@ACCEPTANCE
 def test_ac4_clamp_reversed_bounds_raises():
     from sandbox_pkg.numbers import clamp
 
@@ -118,7 +115,6 @@ def test_ac4_clamp_reversed_bounds_raises():
 # AC-5: clamp raises ValueError when any argument is NaN.
 
 
-@ACCEPTANCE
 @pytest.mark.parametrize(
     "args",
     [
