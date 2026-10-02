@@ -1,0 +1,31 @@
+version: 1
+id: sbx-2
+project: nightshift-sandbox
+request:
+  issue: 2
+tier: T1
+tier_source: owner
+tier_recommended: null
+tags: []
+state: queued
+gate: null
+step: intake
+stop_requested: null
+branch: plan/sbx-2
+feature_branch: null
+pr: null
+created: '2026-10-02T16:41:39Z'
+updated: '2026-10-02T16:41:40Z'
+budget:
+  used: 0
+  limit: 2
+  paused: false
+  since: '2026-10-02T16:41:40Z'
+phases: []
+events:
+- time: '2026-10-02T16:41:39Z'
+  type: created
+  note: run sbx-2 created
+- time: '2026-10-02T16:41:40Z'
+  type: tier
+  note: T1 (owner, 2 h)
