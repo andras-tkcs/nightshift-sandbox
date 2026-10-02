@@ -1,7 +1,6 @@
 """Acceptance tests for run sbx-x2: sandbox_pkg.text.slugify (AC-1 to AC-4, AC-7).
 
-Written before the implementation as strict expected failures. The phase that
-implements slugify removes the xfail markers in the same commit.
+Written before the implementation; they now run as normal tests.
 """
 
 import ast
@@ -11,10 +10,6 @@ from pathlib import Path
 import pytest
 
 from sandbox_pkg import text as text_module
-
-ACCEPTANCE = pytest.mark.xfail(
-    strict=True, raises=AssertionError, reason="ns:sbx-x2 acceptance"
-)
 
 README = Path(__file__).resolve().parent.parent / "README.md"
 
@@ -29,12 +24,10 @@ def _slugify():
     return func
 
 
-@ACCEPTANCE
 def test_ac1_slugify_lowercases_and_hyphenates_space():
     assert _slugify()("Hello World") == "hello-world"
 
 
-@ACCEPTANCE
 @pytest.mark.parametrize(
     ("text", "expected"),
     [
@@ -46,7 +39,6 @@ def test_ac2_slugify_collapses_separator_runs(text, expected):
     assert _slugify()(text) == expected
 
 
-@ACCEPTANCE
 @pytest.mark.parametrize(
     ("text", "expected"),
     [
@@ -59,12 +51,10 @@ def test_ac3_slugify_has_no_leading_or_trailing_hyphen(text, expected):
     assert _slugify()(text) == expected
 
 
-@ACCEPTANCE
 def test_ac4_slugify_keeps_digits():
     assert _slugify()("Python 3.10 Release") == "python-3-10-release"
 
 
-@ACCEPTANCE
 def test_ac7_readme_slugify_example_matches_function():
     examples = README_EXAMPLE.findall(README.read_text(encoding="utf-8"))
     assert examples, "README.md has no slugify example of the form slugify(...)  # '...'"
