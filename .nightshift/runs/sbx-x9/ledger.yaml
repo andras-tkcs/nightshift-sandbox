@@ -18,12 +18,12 @@ feature_branch: fix/sbx-x9
 pr: null
 release: null
 created: '2026-10-06T12:19:55Z'
-updated: '2026-10-06T12:21:11Z'
+updated: '2026-10-06T12:21:26Z'
 budget:
   used: 0.03
   limit: 1
   paused: false
-  since: '2026-10-06T12:21:11Z'
+  since: '2026-10-06T12:21:26Z'
 phases: []
 events:
 - time: '2026-10-06T12:19:55Z'
@@ -36,3 +36,5 @@ events:
   type: state
   note: running
 queued_for_slot: false
+stack_skipped: []
+stacked_on: sbx-x8
