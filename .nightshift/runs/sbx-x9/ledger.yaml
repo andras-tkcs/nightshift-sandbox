@@ -1,0 +1,32 @@
+version: 1
+id: sbx-x9
+project: nightshift-sandbox
+request:
+  text: Add a file THIRD.md that contains the line 'third run'
+tier: T0
+tier_source: owner
+tier_recommended: null
+tags: []
+state: queued
+gate: null
+step: intake
+stop_requested: null
+branch: plan/sbx-x9
+feature_branch: null
+pr: null
+release: null
+created: '2026-10-06T12:19:55Z'
+updated: '2026-10-06T12:19:56Z'
+budget:
+  used: 0
+  limit: 1
+  paused: false
+  since: '2026-10-06T12:19:56Z'
+phases: []
+events:
+- time: '2026-10-06T12:19:55Z'
+  type: created
+  note: run sbx-x9 created
+- time: '2026-10-06T12:19:55Z'
+  type: tier
+  note: T0 (owner, 1 h)
