@@ -5,23 +5,25 @@ request:
   text: Add a file NOTES.md that contains the line 'second run'
 tier: T0
 tier_source: owner
-tier_recommended: null
-tags: []
-state: queued
+tier_recommended: T0
+tags:
+- python
+- docs
+state: running
 gate: null
-step: intake
+step: implement
 stop_requested: null
 branch: plan/sbx-x8
 feature_branch: null
 pr: null
 release: null
 created: '2026-10-06T12:17:22Z'
-updated: '2026-10-06T12:17:23Z'
+updated: '2026-10-06T12:17:56Z'
 budget:
-  used: 0
+  used: 0.01
   limit: 1
   paused: false
-  since: '2026-10-06T12:17:23Z'
+  since: '2026-10-06T12:17:56Z'
 phases: []
 events:
 - time: '2026-10-06T12:17:22Z'
@@ -30,3 +32,7 @@ events:
 - time: '2026-10-06T12:17:22Z'
   type: tier
   note: T0 (owner, 1 h)
+- time: '2026-10-06T12:17:38Z'
+  type: state
+  note: running
+queued_for_slot: false
