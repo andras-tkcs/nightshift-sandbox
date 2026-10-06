@@ -15,3 +15,7 @@ reverse_words("a b c")   # "c b a"
 count_vowels("banana")   # 3
 mean([1, 2, 3])          # 2.0
 ```
+
+## Notes
+
+`NOTES.md` holds short project notes.
