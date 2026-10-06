@@ -1,0 +1,32 @@
+version: 1
+id: sbx-x8
+project: nightshift-sandbox
+request:
+  text: Add a file NOTES.md that contains the line 'second run'
+tier: T0
+tier_source: owner
+tier_recommended: null
+tags: []
+state: queued
+gate: null
+step: intake
+stop_requested: null
+branch: plan/sbx-x8
+feature_branch: null
+pr: null
+release: null
+created: '2026-10-06T12:17:22Z'
+updated: '2026-10-06T12:17:23Z'
+budget:
+  used: 0
+  limit: 1
+  paused: false
+  since: '2026-10-06T12:17:23Z'
+phases: []
+events:
+- time: '2026-10-06T12:17:22Z'
+  type: created
+  note: run sbx-x8 created
+- time: '2026-10-06T12:17:22Z'
+  type: tier
+  note: T0 (owner, 1 h)
