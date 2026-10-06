@@ -2,7 +2,7 @@
 
 A tiny Python package that Nightshift's end-to-end tests work on.
 
-It helps you recieve text and do small things with it: reverse the words of a
+It helps you receive text and do small things with it: reverse the words of a
 sentence, count vowels and compute a mean.
 
 ## Usage
@@ -17,3 +17,7 @@ mean([1, 2, 3])          # 2.0
 ```
 
 See `THIRD.md` for a one-line note ("third run").
+
+## Notes
+
+`NOTES.md` holds short project notes.
